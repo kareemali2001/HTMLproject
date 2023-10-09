@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page2</title>
+    <style>
+        body {
+            background-color: red;
+            margin: 0; /* Remove default margin */
+        }
+
+        header {
+            width: 80px;
+        }
+
+        header div {
+            background-color: blue;
+            width: 100px;
+            margin-left: 20px;
+        }
+
+        h4 {
+            color: black;
+        }
+
+        .box1 {
+            background-color: yellow;
+            width: 1450px;
+            height: 250px;
+            margin-left: 20px;
+        }
+
+        .box2 {
+            background-color: rgb(110, 110, 110);
+            padding: 10px;
+            margin-left: 20px;
+            margin-block-end: 30px;
+            display: inline-block;
+        }
+        .secondform {
+            margin-left: 20px; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h4 style="margin-left: 20px;">personal data</h4>
+        </div>
+    </header>
+    <div class="box1">
+        <div class="box2">
+            <p>Your name</p>
+        </div>
+        <form action="/action_page.php">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" value=""><br>
+            <br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" value=""><br><br>
+           
+          </form> 
+    </div>
+    
+    <div>
+        <br>
+        <form class="secondform" action="/action_page.php">
+            <label for="fname">Phone number:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">email:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <label for="fname">Password:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">re-password:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+            <br>
+            <input type="radio" id="html" name="gender" value="male">
+            <label for="html">male</label><br>
+            <input type="radio" id="html" name="gender" value="female">
+            <label for="html">female</label><br>
+            <br>
+            <br>
+            <input type="checkbox" id="student" name="student" value="student">
+            <label for="student"> student</label><br>
+            <input type="checkbox" id="graduate" name="graduate" value="graduate">
+            <label for="graduate"> graduate</label><br>
+
+            <select name="uni" id="uni">
+                <option value="AUC">AUC</option>
+                <option value="GUC">GUC</option>
+                <option value="MSA">MSA</option>
+                <option value="MUST">MUST</option>
+              </select>
+              <br><br>
+            
+           
+          </form> 
+    </div>
+    <button style="margin-left: 20px;" class="image-button" type="submit">
+        <img style="width: 190px;" src="big-red-button-vector-8548027.jpg" alt="Submit">
+    </button>
+</body>
+</html>
